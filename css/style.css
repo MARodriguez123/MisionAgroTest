@@ -1,0 +1,70 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 16rem;
+  }
+  .carousel-item > img {
+    /* background-image: url(../img/slider1.jpg); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 16rem;
+  }
+
+/* Custom Styles ↓ */
+  #slider1 {
+    background-image: url(../img/slider1.jpg);
+    border-radius: 10px;
+  }
+  #slider2 {
+    background-image: url(../img/slider2.jpg);
+    border-radius: 10px;
+  }
+  #slider3 {
+    background-image: url(../img/slider3.jpg);
+    border-radius: 10px;
+  }
+
+  .text-start h1 {
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    text-shadow: 0px 100px 188px rgba(0, 0, 0, 0.72), 0px 41.7776px 78.5419px rgba(0, 0, 0, 0.517575), 0px 22.3363px 41.9923px rgba(0, 0, 0, 0.429197), 0px 12.5216px 23.5405px rgba(0, 0, 0, 0.36), 0px 6.6501px 12.5022px rgba(0, 0, 0, 0.290803), 0px 2.76726px 5.20244px rgba(0, 0, 0, 0.202425);
+  }
+  .text-start p {
+    text-align: center;
+    color: green;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    padding-block: 40px;
+    margin-block: -10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #9e9d9d;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+  }
+
+
+
+
+
+ 
