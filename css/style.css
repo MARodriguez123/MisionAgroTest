@@ -81,10 +81,19 @@ a span {
   top: calc(50% - 70px/2);
   font-style: normal;
   font-weight: 800;
-  font-size: 37px;
+  font-size: 30px;
   line-height: 140%;
   text-align: center;
   color: #ffffff;
+  -webkit-text-stroke: 1px black;
 }
-
+a span:hover {
+  transform: scale(1.5);
+  transition: 1s ease;
+  -webkit-text-stroke: 1px black;
+}
 /* footer ↓ */
+#contact {
+  color: #ffffff;
+  margin-top: 50px;
+}
