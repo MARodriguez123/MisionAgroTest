@@ -1,5 +1,6 @@
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+/* variables ↓ */
+
+/* header ↓ */
 
 /* Carousel base class */
 .carousel {
@@ -72,23 +73,18 @@
   border-radius: 10px;
 
 }
-span {
+a span {
   position: absolute;
-width: 204px;
-height: 70px;
-left: calc(50% - 204px/2 + 0.5px);
-top: calc(50% - 70px/2);
-
-font-family: 'Myanmar Khyay';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 140%;
-/* identical to box height, or 70px */
-
-text-align: center;
-color: #FFFFFF;
+  width: 204px;
+  height: 70px;
+  left: calc(50% - 204px/2 + 0.5px);
+  top: calc(50% - 70px/2);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 37px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
 }
 
-
- 
+/* footer ↓ */

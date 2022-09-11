@@ -7,11 +7,37 @@
     <title>Misión Agro</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+  <!-- header ↓ -->
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img id="img-svg" src="./img/logo.png" alt="">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-white">Misión Agro</a></li>
+        </ul>
+
+        <form class="d-flex" role="search" style = "position:absolute; right:550px">
+          <input class="form-control me-2" type="search" placeholder="Buscar producto..." aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-3">Iniciar sesión  <i class="bi bi-box-arrow-in-right"></i></button>
+          <button type="button" class="btn btn-success">Registrarse <i class="bi bi-person-fill"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- carrusel ↓ -->
     <main>
-      <!-- carrusel ↓ -->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -21,8 +47,7 @@
             <div class="carousel-inner">
                 <!-- slider1 -->
               <div id="slider1" class="carousel-item active">
-                <img src="">                
-        
+                <img src="">
                 <div class="container">
                   <div class="carousel-caption text-start">
                     <h1>Misión Agro</h1>
@@ -32,8 +57,7 @@
 
               <!-- slider2 -->
               <div id="slider2" class="carousel-item">
-                <img src="">                
-        
+                <img src="">
                 <div class="container">
                   <div class="carousel-caption text-start">
                     <h1>Misión Agro</h1>
@@ -44,8 +68,6 @@
               <!-- slider3 -->
               <div id="slider3" class="carousel-item">
                 <img src="">
-                
-        
                 <div class="container">
                   <div class="carousel-caption text-start">
                     <h1>Misión Agro</h1>
@@ -64,66 +86,56 @@
           </div>
 
           <!-- tarjetas productos ↓ -->
-          <div class="album py-5">
-            <div class="container">
-              <!-- card1 -->
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <section class="container">
+            <div class="album py-5">
+              <div class="container">
+                <!-- card1 -->
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./img/Frutas.jpg" alt="">
+                      <a href="#"><span>FRUTAS</span></a>
+                    </div>
+                  </div>
+  
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./img/Verduras.jpg" alt="">
+                      <a href="#"><span>VERDURAS</span></a>
+                    </div>
+                  </div>
+  
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./img/Granos.jpg" alt="">
+                      <a href="#"><span>GRANOS</span></a>
+                    </div>
+                  </div>
 
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="./img/Frutas.jpg" alt="">
-                    <a href="#"><span>FRUTAS</span></a>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./img/Lacteos.jpg" alt="">
+                      <a href="#"><span>LACTEOS</span></a>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./img/Proteinas.jpg" alt="">
+                      <a href="#"><span>PROTEINAS</span></a>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./img/Otros.jpg" alt="">
+                      <a href="#"><span>OTROS</span></a>
+                    </div>
                   </div>
                 </div>
-
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="./img/Verduras.jpg" alt="">
-                    <a href="#"><span>VERDURAS</span></a>
-                  </div>
-                </div>
-
-
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="./img/Granos.jpg" alt="">
-                    <a href="#"><span>GRANOS</span></a>
-                  </div>
-                </div>
-        
-
-
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="./img/Lacteos.jpg" alt="">
-                    <a href="#"><span>LACTEOS</span></a>
-                  </div>
-                </div>
-
-
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="./img/Proteinas.jpg" alt="">
-                    <a href="#"><span>PROTEINAS</span></a>
-                  </div>
-                </div>
-
-
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <img src="./img/Otros.jpg" alt="">
-                    <a href="#"><span>OTROS</span></a>
-                  </div>
-                </div>
-
-                </div>
-          
+          </section>
     </main>
+
 
 
 <!-- Scripts ↓ -->
