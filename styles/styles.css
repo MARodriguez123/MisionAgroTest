@@ -1,0 +1,19 @@
+:root{
+  --blanco:  #FFF6F4 ;
+  --fuente:  'Roboto', sans-serif;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+
+body{
+    font-family: (var(--fuente));
+
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
