@@ -8,9 +8,7 @@
   *,*::after, *::before{
       box-sizing: inherit;
   }
-  .logo{
-    background-image: url('../img/MisionAgroLogo.png');
-  }
+  
   
   body{
       font-family: (var(--fuente));
