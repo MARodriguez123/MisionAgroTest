@@ -28,7 +28,7 @@ h1{
     background-image: url('../img/maiz.jpg');
     background-position: center center ;
     background-size: cover;
-    height: 200px;
+    height: 150px;
    flex:0 0 calc(50%) 
 }
 /*media query*/
@@ -48,18 +48,20 @@ h1{
     
 }
 .formulario{
-    padding: 50px;
+    padding: 150px;
     background-color: var(--blanco);
 }
-.text-formulario h3, input label, .contraseña-perdida, .a {
+.text-formulario h4, input label, .contraseña-perdida, .a {
 
     color: var(--negro);
+    margin: 30px;
+    text-align: center;
 
 }
 
-.text-formulario h3{
+.text-formulario h4{
 
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -72,10 +74,12 @@ h1{
 
 }
 .input input{
+    margin: 10px;
     width: 100%;
-    padding: 8px 8px ;
+    
+    padding: 6px 25px ;
 
-    border-radius: 20px;
+    border-radius: 30px;
     outline: none;
 
 
@@ -91,6 +95,7 @@ h1{
     font-size: 20px;
     font-weight: bold;
     border: none;
+    transition: background-color .3s ease-in-out;
     
 }
 .input input[type="submit"]:hover{
