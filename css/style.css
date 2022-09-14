@@ -97,3 +97,16 @@ a span:hover {
   color: #ffffff;
   margin-top: 50px;
 }
+
+/* terminos y condiciones ↓ */
+.term-cond{
+  color: #3F3F3F;
+  font-size: 45px;
+  font-weight: 300;
+  text-align: justify;
+  margin: 30px;
+}
+#term {
+  color: #fff;
+  letter-spacing: normal;
+}
