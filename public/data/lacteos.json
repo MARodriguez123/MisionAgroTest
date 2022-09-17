@@ -1,0 +1,28 @@
+[
+    {
+    "id": "pl-helado",
+    "productor": "Mi vaquita",
+    "ubicacion": "Vereda San Pedro"
+    },
+    {
+    "id": "pl-leche",
+    "productor": "Mi vaquita",
+    "ubicacion": "Vereda San Pedro"
+    },
+    {
+    "id": "pl-queso",
+    "productor": "Mi vaquita",
+    "ubicacion": "Vereda San Pedro"
+    },
+    {
+    "id": "pl-mantequilla",
+    "productor": "Mi vaquita",
+    "ubicacion": "Vereda San Pedro"
+    },
+    {
+    "id": "pl-yogur",
+    "productor": "Mi vaquita",
+    "ubicacion": "Vereda San Pedro"
+    }
+
+]
