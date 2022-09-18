@@ -44,15 +44,15 @@
     },
 
     {
-        "id": "ma-pera",
-        "fruta": "Pera",
-        "clase":"Magnoliopsida",
-        "precio": "$80"
+        "id": "ma-trigo",
+        "grano": "Trigo",
+        "clase":"Liliopsida",
+        "precio": "$35"
     },
 
     {
-        "id": "ma-granadilla",
-        "fruta": "Granadilla",
+        "id": "ma-soya",
+        "grano": "Soya",
         "clase":"Magnoliopsida",
         "precio": "$50"
     }
