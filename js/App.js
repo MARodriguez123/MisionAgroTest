@@ -57,6 +57,33 @@ fetch('../public/data/verduras.json')
 })
 
 
+/**Para los granos */
+const granosContainer = document.querySelector('#granosContainer');
+console.log(granosContainer);
+const shuffle2=(array)=>{
+    array.sort(() => Math.random()-0.5);
+}
+
+/**Vamos ahacer la petición de la ruta */
+
+fetch('../public/data/granos.json')
+.then(response => response.json())
+.then(data =>{
+
+    shuffle(data);
+    data.forEach(granos => {
+        granosContainer.innerHTML +=` 
+        <article class="col-3">
+        <h2>${granos.grano}</h2>
+        <img src="../img/granos/${granos.id}.jpg" alt="" width="200">
+        <p><strong>clase:</strong>${granos.clase}</p>
+
+      </article>
+      `
+        
+    });
+    console.log(data);
+})
 
 
 })
