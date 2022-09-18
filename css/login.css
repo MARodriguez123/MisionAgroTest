@@ -22,6 +22,13 @@
     height: 150px;
     flex:0 0 calc(50%) 
 }
+@keyframes mover {
+    0%{
+        transform: translate(100%);
+    }
+    
+}
+
 /*media query*/
 
 @media(min-width:768px){
