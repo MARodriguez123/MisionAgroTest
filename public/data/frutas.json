@@ -1,58 +1,63 @@
+
 [
     {
-        "id": "ma-condensada",
-        "lacteo": "Condensada",
+        "id": "ma-manzana",
+        "fruta": "Manzana",
         "clase": "Malus Domestica",
         "precio": "$30"
 
     },
 
     {
-        "id": "ma-helado",
-        "lacteo": "Helado",
+        "id": "ma-durazno",
+        "fruta": "Durazno",
         "clase": "Prunus Persica",
         "precio": "$20"
     }, 
     
     {
-        "id": "ma-leche",
-        "lacteo": "Leche",
+        "id": "ma-banano",
+        "fruta": "Banano",
         "clase":"Musa Paradisiaca",
         "precio": "$50"
     },
 
     {
-        "id": "ma-mantequilla",
-        "lacteo": "Mantequilla",
+        "id": "ma-fresa",
+        "fruta": "Fresa",
         "clase":"Musa Paradisiaca",
         "precio": "$80"
     },
 
     {
-        "id": "ma-quajada",
-        "lacteo": "Quajada",
+        "id": "ma-uvas",
+        "fruta": "Uvas",
         "clase":"Magnoliopsida",
         "precio": "$70"
     },
 
     {
-        "id": "ma-queso",
-        "lacteo": "Queso",
+        "id": "ma-mango",
+        "fruta": "Mango",
         "clase":"Magnoliopsida",
         "precio": "$70"
     },
 
     {
-        "id": "ma-yogur",
-        "lacteo": "Yogur",
+        "id": "ma-pera",
+        "fruta": "Pera",
         "clase":"Magnoliopsida",
         "precio": "$80"
     },
 
     {
-        "id": "ma-arequipe",
-        "lacteo": "Arequipe",
+        "id": "ma-granadilla",
+        "fruta": "Granadilla",
         "clase":"Magnoliopsida",
         "precio": "$50"
     }
+
+
+
+
 ]

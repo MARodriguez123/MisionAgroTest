@@ -1,57 +1,58 @@
+
 [
     {
-        "id": "ma-condensada",
-        "lacteo": "Condensada",
+        "id": "ma-azucar",
+        "otro": "Azucar",
         "clase": "Malus Domestica",
         "precio": "$30"
 
     },
 
     {
-        "id": "ma-helado",
-        "lacteo": "Helado",
+        "id": "ma-cafe",
+        "otro": "Cafe",
         "clase": "Prunus Persica",
         "precio": "$20"
     }, 
     
     {
-        "id": "ma-leche",
-        "lacteo": "Leche",
+        "id": "ma-comino",
+        "otro": "Comino",
         "clase":"Musa Paradisiaca",
         "precio": "$50"
     },
 
     {
-        "id": "ma-mantequilla",
-        "lacteo": "Mantequilla",
+        "id": "ma-oregano",
+        "otro": "Oregano",
         "clase":"Musa Paradisiaca",
         "precio": "$80"
     },
 
     {
-        "id": "ma-quajada",
-        "lacteo": "Quajada",
+        "id": "ma-panela",
+        "otro": "Panela",
         "clase":"Magnoliopsida",
         "precio": "$70"
     },
 
     {
-        "id": "ma-queso",
-        "lacteo": "Queso",
+        "id": "ma-pimienta",
+        "otro": "Pimienta",
         "clase":"Magnoliopsida",
         "precio": "$70"
     },
 
     {
-        "id": "ma-yogur",
-        "lacteo": "Yogur",
+        "id": "ma-romero",
+        "otro": "Romero",
         "clase":"Magnoliopsida",
         "precio": "$80"
     },
 
     {
-        "id": "ma-arequipe",
-        "lacteo": "Arequipe",
+        "id": "ma-curcuma",
+        "otro": "Curcuma",
         "clase":"Magnoliopsida",
         "precio": "$50"
     }
