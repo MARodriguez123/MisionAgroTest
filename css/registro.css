@@ -45,8 +45,8 @@
 .text-formulario h4, input label, .contraseña-perdida, .a {
 
     color: var(--negro);
-    margin: 30px;
-    text-align: center;
+        margin: 30px;
+        text-align: center;
 
 }
 
