@@ -61,4 +61,9 @@ public class MisionAgroController {
     public String goTotratadatos(Model model) {
         return "trata-datos";    
     }
+
+    @GetMapping("/publicaciones")
+    public String goTopublicaciones(Model model) {
+        return "publicaciones";    
+    }
 }

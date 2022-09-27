@@ -8,7 +8,7 @@ function iniciar_sesion(){
 
     if(usuario == 'usuario@email.com'  && password == '123' ){
 
-        window.location.href = '../templates/publicaciones.html';
+        window.location.href = '/publicaciones';
         localStorage.usuario= 'usuario';
     }else{
         alert('Este Usuario no se encuentra registrado, por favor verifique la informacón');
