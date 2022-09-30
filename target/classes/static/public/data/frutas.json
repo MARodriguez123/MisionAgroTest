@@ -4,57 +4,64 @@
         "id": "ma-manzana",
         "fruta": "Manzana",
         "clase": "Malus Domestica",
-        "precio": "$30"
-
+        "precio": "$30",
+        "imagen":"https://img.freepik.com/foto-gratis/monton-frutas-frescas-manzanas-rojas-jugosas-suaves-frescas-aisladas-blanco_179666-493.jpg" 
     },
 
     {
         "id": "ma-durazno",
         "fruta": "Durazno",
         "clase": "Prunus Persica",
-        "precio": "$20"
+        "precio": "$20",
+        "imagen": "https://img.freepik.com/foto-gratis/melocoton-mesa_144627-17515.jpg"
     }, 
     
     {
         "id": "ma-banano",
         "fruta": "Banano",
         "clase":"Musa Paradisiaca",
-        "precio": "$50"
+        "precio": "$50",
+        "imagen": "https://img.freepik.com/foto-gratis/platanos-fondo-blanco_1187-1671.jpg"
     },
 
     {
-        "id": "ma-fresa",
+        "id": "ma-fresas",
         "fruta": "Fresa",
         "clase":"Musa Paradisiaca",
-        "precio": "$80"
+        "precio": "$80",
+        "imagen": "https://img.freepik.com/foto-gratis/fresas-rojas-frescas-hojas-verdes_114579-10506.jpg"
     },
 
     {
         "id": "ma-uvas",
         "fruta": "Uvas",
         "clase":"Magnoliopsida",
-        "precio": "$70"
+        "precio": "$70",
+        "imagen": "https://img.freepik.com/foto-gratis/uvas-verdes_74190-4893.jpg"
     },
 
     {
         "id": "ma-mango",
         "fruta": "Mango",
         "clase":"Magnoliopsida",
-        "precio": "$70"
+        "precio": "$70",
+        "imagen": "https://img.freepik.com/fotos-premium/frutas-maduras-mango-rodajas-aisladas-blanco_80510-383.jpg"
     },
 
     {
         "id": "ma-pera",
         "fruta": "Pera",
         "clase":"Magnoliopsida",
-        "precio": "$80"
+        "precio": "$80",
+        "imagen": "https://img.freepik.com/fotos-premium/peras-verdes-maduras-aisladas-hojas-aisladas_80510-586.jpg"
     },
 
     {
         "id": "ma-granadilla",
         "fruta": "Granadilla",
         "clase":"Magnoliopsida",
-        "precio": "$50"
+        "precio": "$50",
+        "imagen": "https://img.freepik.com/foto-gratis/granadilla-aislada_144627-34594.jpg"
     }
 
 

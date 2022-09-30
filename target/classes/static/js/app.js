@@ -6,22 +6,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const shuffle = (array) => {
         array.sort(() => Math.random() - 0.5);
       }
-    
+
     fetch('../public/data/frutas.json')
     .then(response => response.json())
     .then(data =>{
 
+        
+                
         shuffle(data);
         data.forEach(frutas => {
-            frutasContainer.innerHTML += `
+            /*frutasContainer.innerHTML += `
             <article class="col-3">
                 <h2>${frutas.fruta}</h2>
-                <img src="../img/frutas/${frutas.id}.jpg" alt="" width="200">
-                <p><strong>clase: </strong>${frutas.clase}</p>
+                <img src="${frutas.imagen}" alt="" width="200">
+                <p><strong>precio: </strong>${frutas.precio}</p>
             </article>
-            `
+            `*/
+            frutasContainer.innerHTML +=`
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="${frutas.imagen}" alt="" class="card">
+                  <a href="/${frutas.id}"><span>${frutas.fruta}</span></a>
+                </div>
+              </div> ` 
         })
-        
         console.log(data);
     })
 });

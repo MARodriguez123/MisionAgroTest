@@ -65,13 +65,22 @@
 
 
 /* Tarjetas productos ↓ */
+img.card
+{
+  height: 250px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .card.shadow-sm {
   border-radius: 10px;
 }
 .card img{
   border-radius: 10px;
-
 }
+
 a span {
   position: absolute;
   width: 204px;
