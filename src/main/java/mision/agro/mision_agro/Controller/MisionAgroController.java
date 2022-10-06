@@ -1,12 +1,14 @@
 package mision.agro.mision_agro.Controller;
 
+import java.security.KeyStore;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MisionAgroController {
-
+    //El  model es un objetos para trabajar con MVC y me representa a los datos que me muestra en la vista y me trabaja con todos los métodos..
     @GetMapping("/frutas")
     public String goTofrutas(Model model) {
         return "frutas";    
@@ -66,4 +68,10 @@ public class MisionAgroController {
     public String goTopublicaciones(Model model) {
         return "publicaciones";    
     }
+
+    @GetMapping("/listausuarios")
+    public String goTolistausuarios(Model model) {
+        model.addAttribute("name", Attribute:"Bienvenido Señor Admin");
+        return "admin/listausuarios";  
+}
 }
