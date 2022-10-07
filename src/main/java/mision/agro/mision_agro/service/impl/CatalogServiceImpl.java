@@ -3,13 +3,15 @@ package mision.agro.mision_agro.service.impl;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
-import mision.agro.mision_agro.controller.dto.CategoryDto;
-import mision.agro.mision_agro.controller.dto.ProductDto;
-import mision.agro.mision_agro.controller.dto.ProductImageDto;
+import mision.agro.mision_agro.Controller.dto.CategoryDto;
+import mision.agro.mision_agro.Controller.dto.ProductDto;
 import mision.agro.mision_agro.model.Repository.CategoryRepository;
+import mision.agro.mision_agro.model.Repository.ProductRepository;
+import mision.agro.mision_agro.model.Repository.UserRepository;
 import mision.agro.mision_agro.service.CatalogService;
 
 @AllArgsConstructor

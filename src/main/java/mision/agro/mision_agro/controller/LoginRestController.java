@@ -1,4 +1,4 @@
-package mision.agro.mision_agro.controller;
+package mision.agro.mision_agro.Controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import lombok.AllArgsConstructor;
-import mision.agro.mision_agro.controller.dto.LoginRequest;
+import mision.agro.mision_agro.Controller.dto.LoginRequest;
 import mision.agro.mision_agro.service.SecurityService;
 
 @AllArgsConstructor
@@ -28,7 +28,7 @@ public class LoginRestController {
     @PostMapping
     public ResponseEntity<?> login(@RequestBody LoginRequest user) {
         try {
-            var response = securityService.validateUser(user.getEmail_usuaio(), user.getPassword_usuario());
+            var response = securityService.validateUser(user.getEmail(), user.getPassword());
             return ResponseEntity.ok(response);
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
