@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import mision.agro.mision_agro.model.Entity.User;
 
-public interface userRepository extends JpaRepository<User, String> {
+public interface UserRepository extends JpaRepository<User, String> {
 
     Optional<User> findByEmailUsuarioAndPasswordUsuario(String email, String password);
 
