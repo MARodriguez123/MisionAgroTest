@@ -18,8 +18,15 @@ import mision.agro.mision_agro.service.CatalogService;
 public class CatalogServiceImpl implements CatalogService{
 
     private final CategoryRepository categoryRepository;
+    private final ProductRepository productRepository;
+    private final UserRepository userRepository;
+
+
     @Override
     public List<CategoryDto> getCategories() {
+        var categories= categoryRepository.findAll(Sort.by("name"));
+
+        return categories.stream()
         
         
         
