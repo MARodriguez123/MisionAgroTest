@@ -9,7 +9,7 @@ import lombok.AllArgsConstructor;
 import mision.agro.mision_agro.controller.dto.CategoryDto;
 import mision.agro.mision_agro.controller.dto.ProductDto;
 import mision.agro.mision_agro.controller.dto.ProductImageDto;
-import mision.agro.mision_agro.model.repository.CategoryRepository;
+import mision.agro.mision_agro.model.Repository.CategoryRepository;
 import mision.agro.mision_agro.service.CatalogService;
 
 @AllArgsConstructor

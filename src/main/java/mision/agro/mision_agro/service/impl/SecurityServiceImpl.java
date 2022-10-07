@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
 import lombok.var;
-import mision.agro.mision_agro.model.repository.UserRepository;
+import mision.agro.mision_agro.model.Repository.UserRepository;
 import mision.agro.mision_agro.service.SecurityService;
 
 @Service

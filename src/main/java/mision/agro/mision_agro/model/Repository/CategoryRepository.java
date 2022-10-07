@@ -1,4 +1,4 @@
-package mision.agro.mision_agro.model.repository;
+package mision.agro.mision_agro.model.Repository;
 
 import java.util.Optional;
 
