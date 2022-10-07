@@ -1,4 +1,4 @@
-package mision.agro.mision_agro.Controller.dto;
+package mision.agro.mision_agro.controller.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,11 +1,21 @@
-package mision.agro.mision_agro.Controller;
+package mision.agro.mision_agro.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import mision.agro.mision_agro.service.CatalogService;
+
 @Controller
 public class MisionAgroController {
+
+    private CatalogService catalogService;
+
+    @GetMapping(value = { "/", "/index", "/index.html" })
+    public String goToIndex(Model model) {
+        model.addAttribute("page", "home");
+        return "index";
+    }
 
     @GetMapping("/frutas")
     public String goTofrutas(Model model) {

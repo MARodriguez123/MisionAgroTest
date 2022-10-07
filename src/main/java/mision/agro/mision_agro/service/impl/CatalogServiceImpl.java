@@ -7,8 +7,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
-import mision.agro.mision_agro.Controller.dto.CategoryDto;
-import mision.agro.mision_agro.Controller.dto.ProductDto;
+import mision.agro.mision_agro.controller.dto.CategoryDto;
+import mision.agro.mision_agro.controller.dto.ProductDto;
 import mision.agro.mision_agro.model.Repository.CategoryRepository;
 import mision.agro.mision_agro.model.Repository.ProductRepository;
 import mision.agro.mision_agro.model.Repository.UserRepository;
