@@ -2,13 +2,28 @@ package mision.agro.mision_agro.service.impl;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
-import org.springframework.data.domain.Sort;
+<<<<<<< HEAD
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Sort;
 import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
 import mision.agro.mision_agro.controller.dto.CategoryDto;
 import mision.agro.mision_agro.controller.dto.ProductDto;
+=======
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+
+import lombok.AllArgsConstructor;
+<<<<<<< HEAD
+import mision.agro.mision_agro.controller.dto.CategoryDto;
+import mision.agro.mision_agro.controller.dto.ProductDto;
+=======
+import mision.agro.mision_agro.Controller.dto.CategoryDto;
+import mision.agro.mision_agro.Controller.dto.ProductDto;
+>>>>>>> fdcdb041addb9f0baae2b67994a1b9dc801d9a12
+>>>>>>> b2aa728136e0a61ebcb98a596bed263f6ce01c9e
 import mision.agro.mision_agro.model.Repository.CategoryRepository;
 import mision.agro.mision_agro.model.Repository.ProductRepository;
 import mision.agro.mision_agro.model.Repository.UserRepository;
@@ -29,26 +44,34 @@ public class CatalogServiceImpl implements CatalogService{
         var categories= categoryRepository.findAll(Sort.by("name"));
 
         return categories.stream()
+        .map(cat -> new CategoryDto(cat.getNombre(), cat.getId().intValue()))
+        .collect(Collectors.toList()); 
         
-        
-        
-        return null;
     }
 
     @Override
     public Optional<CategoryDto> getCategoryById(Integer id) {
+        var category = productRepository.deleteAllById(id.longValue());
+        if (category.isEmpty()){
+            return Optional.empty();
+        }
         
-        
+        return Optional.of(new CategoryDto(
+        category.get().getNombre(),
+        category.get().getId().intValue())
+        );
 
-        return Optional.empty();
+       
     }
 
     @Override
     public List<ProductDto> getProductsByCategoryId(Integer categoryId) {
-        
+        var product = productRepository.findAllByCategoryId(categoryId.longValue());
+
+        var categoryProducts= 
         
 
-        return null;
+        
     }
 
     @Override
