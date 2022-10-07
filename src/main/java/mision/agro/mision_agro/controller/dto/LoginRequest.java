@@ -1,4 +1,4 @@
-package mision.agro.mision_agro.controller.dto;
+package mision.agro.mision_agro.Controller.dto;
 
 import lombok.Data;
 

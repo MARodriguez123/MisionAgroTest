@@ -1,4 +1,4 @@
-package mision.agro.mision_agro.controller;
+package mision.agro.mision_agro.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

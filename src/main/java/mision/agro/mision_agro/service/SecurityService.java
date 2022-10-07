@@ -1,6 +1,9 @@
 package mision.agro.mision_agro.service;
 
-import mision.agro.mision_agro.controller.dto.UserResponse;
+import java.util.List;
+
+import mision.agro.mision_agro.Controller.dto.UserRequest;
+import mision.agro.mision_agro.Controller.dto.UserResponse;
 
 public interface SecurityService {
     UserResponse validateUser(String username, String password);

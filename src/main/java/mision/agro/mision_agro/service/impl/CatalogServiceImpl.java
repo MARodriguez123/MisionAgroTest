@@ -4,12 +4,21 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+<<<<<<< HEAD
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Sort;
 import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
 import mision.agro.mision_agro.controller.dto.CategoryDto;
 import mision.agro.mision_agro.controller.dto.ProductDto;
+=======
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+
+import lombok.AllArgsConstructor;
+import mision.agro.mision_agro.Controller.dto.CategoryDto;
+import mision.agro.mision_agro.Controller.dto.ProductDto;
+>>>>>>> fdcdb041addb9f0baae2b67994a1b9dc801d9a12
 import mision.agro.mision_agro.model.Repository.CategoryRepository;
 import mision.agro.mision_agro.model.Repository.ProductRepository;
 import mision.agro.mision_agro.model.Repository.UserRepository;
