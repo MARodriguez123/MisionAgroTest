@@ -4,14 +4,14 @@ import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import mision.agro.mision_agro.model.Entity.user;
+import mision.agro.mision_agro.model.Entity.User;
 
-public interface userRepository extends JpaRepository<user, String> {
+public interface userRepository extends JpaRepository<User, String> {
 
-    Optional<user> findByNombre(String nombre);
+    Optional<User> findByEmailUsuarioAndPasswordUsuario(String email, String password);
 
-    Optional<user> findByApellido(String apellido);
+    Optional<User> findByEmailUsuario(String email);
 
-    Optional<user> findByEmail(String email_usuario);
+    //Evaluar nombre de atributos en llamado... eliminar palabra Usuario en caso de que no corra correctamente
     
 }

@@ -4,12 +4,10 @@ import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import mision.agro.mision_agro.model.Entity.category;
+import mision.agro.mision_agro.model.Entity.Category;
 
-public interface categoryRepository extends JpaRepository<category, Long> {
+public interface CategoryRepository extends JpaRepository<Category, Long> {
 
-    Optional<category> findByNombre(String string);
-
-
+    Optional<Category> findByNombre(String string);
     
 }

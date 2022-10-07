@@ -5,13 +5,13 @@ import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import mision.agro.mision_agro.model.Entity.product;
+import mision.agro.mision_agro.model.Entity.Product;
 
-public interface productRepository extends JpaRepository<product, String> {
+public interface ProductRepository extends JpaRepository<Product, String> {
 
-    Optional<product> findByNombre(String string);
+    List<Product> findAllByCategoriaId(Long categoryId);
 
-    List<product> findAllByCategoriaId(Long categoriaId);
+    List<Product> findAllByCategoriaIdIn(List<Long> categoryIds);
 
-    List<product> findAllByDescripcionLikeOrderByNombreAsc(String descripcion);
+    List<Product> findAllByDescripcionLikeOrderByNombreAsc(String description);
 }
