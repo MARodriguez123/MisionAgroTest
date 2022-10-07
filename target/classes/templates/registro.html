@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html xmnls:th="http://www.thymeleaf.org">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,35 +44,34 @@
         <div class="img-form">
   
         </div>
-        <form class="formulario">
+        <div th:if=${param.exito}>
+          <div class="alert alert-info"> Registrado exitosamente a Misión Agro</div>
+        <form th:action = "@{/registro}" method ="post" th:object = "$usuario" class="formulario">
           <div class="text-formulario">
               <h4>Registrarse</h4>
           </div>
           <div class="input">
               
-              <input  placeholder="Nombre Completo *" type="text" id="nombre">
+              <input  placeholder="Nombre Completo *" type="text" id="nombre" th:field ="*{Nombre completo}" required autofocus="autofocus">
               
   
           </div>
           <div class="input">
               
-            <input  placeholder="Apellido *" type="text" id="apellido">
-            
-
+            <input  placeholder="Apellido *" type="text" id="apellido" th:field="*{Apellido}" required autofocus="autofocus">
         </div>
           <div class="input">
-              
-              <input placeholder="Correo Electrónico*" type="correo" id="correo">
+              <input placeholder="Correo Electrónico*" type="correo" id="correo"  th:field="*{Correo}" required autofocus="autofocus" >
           </div>
           <div class="input">
-            <input placeholder="Teléfono*" type="tel" id="telefono">
+            <input placeholder="Teléfono*" type="tel" id="telefono"    th:field="*{Telefono}" required autofocus="autofocus" >
           </div>
           <div>
             <div class="input">
-                <input placeholder="Contraseña*" type="password" id="contraseña">
+                <input placeholder="Contraseña*" type="password" id="contraseña"   th:field="*{Contrasena}" required autofocus="autofocus">
             </div>
             <div class="input">
-                <input placeholder="Confirme su contraseña*" type="password" id="contraseña">
+                <input placeholder="Confirme su contraseña*" type="password" id="contraseña"   th:field="*{Contrasena}" required autofocus="autofocus">
             </div>
           </div>
           <div class="input">

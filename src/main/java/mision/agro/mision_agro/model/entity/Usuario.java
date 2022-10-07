@@ -2,6 +2,11 @@ package mision.agro.mision_agro.model.entity;
 
 import java.io.Serializable;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import lombok.Data;
 
 @Entity
@@ -14,12 +19,12 @@ public class Usuario implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long Id_registro;
-    private String usuario;
-    private String nombre;
-    private String  apellido;  
-    private String correo;
-    private String telefono;
-    private String contraseña;
+    private String Usuario;
+    private String Nombre_Completo;
+    private String  Apellido;  
+    private String Correo;
+    private String Telefono;
+    private String Contrasena;
 
     
 }

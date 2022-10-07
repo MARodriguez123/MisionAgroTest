@@ -1,29 +1,15 @@
 package mision.agro.mision_agro.Controller.dto;
 
-import javax.annotation.Generated;
-
-import org.springframework.stereotype.Indexed;
-
-import mision.agro.mision_agro.model.entity.Entity;
-
-@Entity
-@Table(name="usuario", uniqueConstrains = @UniCUniqueConstrains(columnNames="Correo"))
-
-public class UsuarioRegistro {
-
-
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-
+public class UsuarioRegistroDto {
+    
+    
     private Long id;
-    @Column(name="Nombre_completo")
-    private String Nombre_completo;
-    @Column(name="Apellido")
+    private String Nombre_completo; 
     private String Apellido;
-    @Column(name="Correo")
     private String Correo;
-    @Column(name="Contrasena")
+    private String Telefono;
     private String Contrasena;
+
 
 
     
@@ -83,7 +69,19 @@ public class UsuarioRegistro {
     public void setCorreo(String Correo) {
         this.Correo = Correo;
     }
+ /**
+     * @return String return the Contrasena
+     */
+    public String getTelefono() {
+        return Telefono;
+    }
 
+    /**
+     * @param Telefono the Telefoono to set
+     */
+    public void setTelefono(String Telefono) {
+        this.Telefono = Telefono;
+    }
     /**
      * @return String return the Contrasena
      */
@@ -97,5 +95,38 @@ public class UsuarioRegistro {
     public void setContrasena(String Contrasena) {
         this.Contrasena = Contrasena;
     }
+
+    public UsuarioRegistroDto(Long id, String Nombre_completo, String Apellido, String Correo,String Telefono,  String Contrasena) {
+        super();
+        this.id = id;
+        this.Nombre_completo = Nombre_completo;
+        this.Apellido = Apellido;
+        this.Correo = Correo;
+        this.Telefono = Telefono;
+        this.Contrasena = Contrasena;
+    }
+
+    public UsuarioRegistroDto( String Nombre_completo, String Apellido, String Correo, String Telefono,  String Contrasena) {
+       
+       super();
+        this.Nombre_completo = Nombre_completo;
+        this.Apellido = Apellido;
+        this.Correo = Correo;
+        this.Telefono = Telefono;
+        this.Contrasena = Contrasena;
+    }
+    public UsuarioRegistroDto( String Correo) {
+     super();
+        this.Correo = Correo;
+
+
+    }
+
+    public UsuarioRegistroDto( ) {
+
+
+}
+
+
 
 }

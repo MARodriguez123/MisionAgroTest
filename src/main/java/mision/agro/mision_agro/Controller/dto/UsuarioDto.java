@@ -1,13 +1,13 @@
 package mision.agro.mision_agro.Controller.dto;
 
 
- 
 
-import javax.management.loading.ClassLoaderRepository;
+import org.springframework.data.repository.CrudRepository;
 
 import mision.agro.mision_agro.model.entity.Usuario;
 
-public interface UsuarioDto extends ClassLoaderRepository<Usuario, Long> {
+
+public interface UsuarioDto extends CrudRepository<Usuario, Long> {
     
 }
 

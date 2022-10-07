@@ -1,30 +1,50 @@
 package mision.agro.mision_agro.service;
 
 import java.util.List;
+import mision.agro.mision_agro.Controller.dto.UsuarioDto;
+import mision.agro.mision_agro.Controller.dto.UsuarioRegistroDto;
+import mision.agro.mision_agro.model.UsuarioRegistro;
+import mision.agro.mision_agro.model.entity.Usuario;
+import mision.agro.mision_agro.repository.UsuarioRepositorio;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import mision.agro.mision_agro.Controller.dto.UsuarioDto;
-import mision.agro.mision_agro.model.entity.Usuario;
+
 
 @Service
 public class UsuarioServicioImp implements UsuarioServicio {
 
 @Autowired
 
+private UsuarioRepositorio  usuarioRepositorio;
+
+public UsuarioServicioImp(UsuarioRepositorio usuarioRepositorio){
+    super();
+    this.usuarioRepositorio=usuarioRepositorio;
+}
+@Override
+public UsuarioRegistro guardar(UsuarioRegistroDto  registroDto){
+    UsuarioRegistro usuarioRegistro = new UsuarioRegistro(registroDto.getNombre_completo(),
+    registroDto.getApellido() ,registroDto.getCorreo() ,registroDto.getTelefono( ) ,registroDto.getContrasena());
+   return usuarioRepositorio.save(usuarioRegistro);
+}
+
+//Parte para el manejo del crud
+
+
 private UsuarioDto usuarioDto;
     
 
     @Override
-
      //Se agrega la entidad transaccional para evitar una serie de errores al momento de las consultas
     @Transactional(readOnly= true)
 
     public List<Usuario> listaUsuarios() {
         //Para recupeerar los datos de tipo persona se hace lo siguiente
         
-        return (List<Usuario>)usuarioDto.findAll();
+        return (List<Usuario>) usuarioDto.findAll();
     }
 
     @Override
@@ -57,4 +77,7 @@ private UsuarioDto usuarioDto;
 
         return usuarioDto.findById(usuario.getId_registro()).orElse(null);
     }
+
+  
+    
 }

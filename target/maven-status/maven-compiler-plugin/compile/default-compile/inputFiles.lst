@@ -1,2 +1,15 @@
-/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/Controller/MisionAgroController.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/Controller/LoginRestController.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/Controller/dto/UsuarioDto.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/model/entity/Entity.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/Controller/dto/UsuarioRegistroDto.java
 /home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/MisionAgroApplication.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/Controller/dto/LoginRequest.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/repository/UsuarioRepositorio.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/Controller/CrudRestController.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/model/UsuarioRegistro.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/Controller/MisionAgroController.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/model/entity/Usuario.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/Controller/UsuarioRegistroRestController.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/service/UsuarioServicio.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/service/UsuarioServicioImp.java
+/home/carlos/Documentos/ejercicios_programación/Mision_Agro/src/main/java/mision/agro/mision_agro/model/Rol.java
