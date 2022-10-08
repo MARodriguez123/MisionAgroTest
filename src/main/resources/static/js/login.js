@@ -16,8 +16,8 @@ const login = () => {
     }
 
     const body = {
-        "correo": email,
-        "contrasela": password,
+        "email": email,
+        "password": password,
     };
     postToLogin(body);
 
@@ -38,7 +38,7 @@ const postToLogin = async (bodyObject) => {
 
     if (response.ok) {
         const user = await response.json();
-        localStorage.setItem("loggedEmail", JSON.stringify(user));
+        localStorage.setItem("loggedUser", JSON.stringify(user));
         alert("Te damos la Bienvenida" + user.email + "!", "success");
 
         await new Promise(r => setTimeout(r, 2000));

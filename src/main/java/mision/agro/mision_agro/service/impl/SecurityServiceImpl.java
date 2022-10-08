@@ -29,6 +29,20 @@ public class SecurityServiceImpl implements SecurityService {
     }   
 
     @Override
+    public UserResponse getUserByEmail(String email) {
+        var userOp = userRepository.findById(email);
+        if (userOp.isEmpty()) {
+            throw new RuntimeException("El usuario no existe");
+        }
+
+        var user = userOp.get();
+        return UserResponse.builder()
+                .nombre(user.getNombre())
+                .email(user.getEmail())
+                .build();
+    }
+
+    @Override
     public List<UserResponse> getAllUsers() {
         return userRepository.findAll().stream()
                 .map(u -> UserResponse.builder()
@@ -41,7 +55,7 @@ public class SecurityServiceImpl implements SecurityService {
     @Override
     public void createUser(UserRequest user) {
 
-        var userOp = userRepository.findByEmail(user.getEmail());
+        var userOp = userRepository.findById(user.getEmail());
         if(userOp.isPresent()){
             throw new RuntimeException("Ya existe un usuario registrado con ese correo electrónico");
         }
@@ -70,8 +84,8 @@ public class SecurityServiceImpl implements SecurityService {
     }
 
     @Override
-    public void deleteUser(String user) {
-        var userOp = userRepository.findByEmail(user);
+    public void deleteUser(String email) {
+        var userOp = userRepository.findById(email);
         if (userOp.isEmpty()) {
             throw new RuntimeException("El usuario no existe");
         }
@@ -81,13 +95,13 @@ public class SecurityServiceImpl implements SecurityService {
     }
 
     @Override
-    public void activateUser(String username) {
+    public void activateUser(String email) {
         // TODO Auto-generated method stub
         
     }
 
     @Override
-    public void inactivateUser(String username) {
+    public void inactivateUser(String email) {
         // TODO Auto-generated method stub
         
     }

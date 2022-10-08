@@ -10,13 +10,15 @@ public interface SecurityService {
 
     List<UserResponse> getAllUsers();
 
+    UserResponse getUserByEmail(String email);
+
     void createUser(UserRequest user);
 
     void updateUser(UserRequest user);
 
-    void deleteUser(String username);
+    void deleteUser(String email);
 
-    void activateUser(String username);
+    void activateUser(String email);
 
-    void inactivateUser(String username);
+    void inactivateUser(String email);
 }
