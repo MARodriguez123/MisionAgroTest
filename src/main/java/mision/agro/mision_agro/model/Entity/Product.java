@@ -38,7 +38,6 @@ public class Product {
     private List<User> Usuario;
 
     @ManyToOne
-    @JoinColumn(name = "Producto")
-    private List<Category> Categoria;
+    private Category Categoria;
 
 }

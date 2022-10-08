@@ -26,9 +26,8 @@ public class Category {
     @Getter @Setter @Column(name = "nombre", nullable = false, length = 100)
     private String nombre;
 
-    @OneToMany
-    @JoinColumn(name = "category")
+    @OneToMany(mappedBy = "category")
     private List<Product> Producto;
-
+    
 }
 
