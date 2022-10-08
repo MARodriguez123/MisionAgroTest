@@ -1,17 +1,10 @@
 package mision.agro.mision_agro.service.impl;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
-import org.springframework.data.domain.Sort;
-
-import mision.agro.mision_agro.controller.dto.CategoryDto;
 import mision.agro.mision_agro.controller.dto.ProductDto;
-import mision.agro.mision_agro.model.Repository.CategoryRepository;
-import mision.agro.mision_agro.model.Repository.ProductRepository;
-import mision.agro.mision_agro.model.Repository.UserRepository;
-import mision.agro.mision_agro.service.CatalogService;
+
+@AllArgsConstructor
+@Service
+
 
 public class CatalogServiceImpl implements CatalogService {
 
@@ -31,7 +24,8 @@ public class CatalogServiceImpl implements CatalogService {
 
     @Override
     public Optional<CategoryDto> getCategoryById(Integer id) {
-        var category = productRepository.deleteAllById(id.longValue());
+        var category = productRepository.findById(id.longValue());
+
         if (category.isEmpty()) {
             return Optional.empty();
         }
@@ -46,29 +40,34 @@ public class CatalogServiceImpl implements CatalogService {
         public List<ProductDto> getProductsByCategoryId(Integer categoryId) {
             var products = productRepository.findAllByCategoryId(categoryId.longValue());
     
-            var categoryProducts= product.stream()
+            var categoryProducts= products.stream()
             .map(pro-> ProductDto.builder()
                     .id(pro.getCode())
                     .nombre(pro.getNombre())
-                    ,
-    
-    
-    
-            );
-            
+                    .descripcion(pro.getDescription())
+                    .userId(pro.getUserId)
+                    .imagenUrl(pro.getImagenUrl)
+                    .build())
+                .collect(Collectors.toList());
+              
+        
             return categoryProducts;
         }
 
     @Override
     public ProductDto getProductsById(String id) {
+        var productOp =productRepository.findById(id);
 
-        return null;
+        var product = productOp.get();
+        return ProductDto.builder()
+                 .id(product.getCode())
+                 .nombre(product.getNombre())
+                 .descripcion(product.getDescripcion())
+                 .userId(product.getUserId())
+                 .imagenUrl(product..getImagenUrl())
+                 .build()
     }
 
-    @Override
-    public List<ProductImageDto> getProductsImageById(String id) {
+}
 
-        return null;
-    }
 
-}}
