@@ -2,12 +2,12 @@ package mision.agro.mision_agro.model.Entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -26,8 +26,9 @@ public class Category {
     @Getter @Setter @Column(name = "nombre", nullable = false, length = 100)
     private String nombre;
 
-    @OneToMany(mappedBy = "category")
-    private List<Product> Producto;
+    @OneToMany(mappedBy = "categoria",
+    cascade = CascadeType.ALL)
+    private List<Product> producto;
     
 }
 

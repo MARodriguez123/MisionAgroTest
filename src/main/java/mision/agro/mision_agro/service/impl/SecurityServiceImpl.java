@@ -20,7 +20,7 @@ public class SecurityServiceImpl implements SecurityService {
 
     @Override
     public UserResponse validateUser(String email, String password) {
-        var userOp = userRepository.findByEmailUsuarioAndPasswordUsuario(email, password);
+        var userOp = userRepository.findByEmailAndPassword(email, password);
         var user = userOp.get();
         return UserResponse.builder()
                 .nombre(user.getNombre())
@@ -41,7 +41,7 @@ public class SecurityServiceImpl implements SecurityService {
     @Override
     public void createUser(UserRequest user) {
 
-        var userOp = userRepository.findByEmailUsuario(user.getEmail());
+        var userOp = userRepository.findByEmail(user.getEmail());
         if(userOp.isPresent()){
             throw new RuntimeException("Ya existe un usuario registrado con ese correo electrónico");
         }
@@ -56,7 +56,7 @@ public class SecurityServiceImpl implements SecurityService {
 
     @Override
     public void updateUser(UserRequest user) {
-        var userOp = userRepository.findByEmailUsuario(user.getEmail());
+        var userOp = userRepository.findByEmail(user.getEmail());
         if (userOp.isEmpty()) {
             throw new RuntimeException("El email no existe");
         }
@@ -71,7 +71,7 @@ public class SecurityServiceImpl implements SecurityService {
 
     @Override
     public void deleteUser(String user) {
-        var userOp = userRepository.findByEmailUsuario(user);
+        var userOp = userRepository.findByEmail(user);
         if (userOp.isEmpty()) {
             throw new RuntimeException("El usuario no existe");
         }
