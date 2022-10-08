@@ -2,6 +2,7 @@ package mision.agro.mision_agro.Controller;
 
 import org.springframework.asm.Attribute;
 import org.springframework.asm.Attribute;
+import org.springframework.asm.Attribute;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -72,6 +73,6 @@ public class MisionAgroController {
     @GetMapping("/listausuarios")
     public String goTolistausuarios(Model model) {
         model.addAttribute("name", Attribute:"Bienvenido Señor Admin");
-        return "admin/listausuarios";  
+        return "/listausuarios";  
 }
 }
