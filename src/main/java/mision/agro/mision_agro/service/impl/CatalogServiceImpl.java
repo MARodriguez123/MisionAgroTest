@@ -65,10 +65,4 @@ public class CatalogServiceImpl implements CatalogService {
         return null;
     }
 
-    @Override
-    public List<ProductImageDto> getProductsImageById(String id) {
-
-        return null;
-    }
-
 }}
