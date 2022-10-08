@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MisionAgroController {
 
-    @GetMapping(value = { "/"})
+    @GetMapping(value = { "/index"})
     public String goToIndex(Model model) {
         model.addAttribute("page", "home");
         return "index";
